@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<title> Student Portfolio - Profile Creation </title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="SWE-Style.css">
+		<link rel="stylesheet" href="DarkStyle.css">
+	</head>
+	<body style="background-color: #454d54">
+		 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"> <img src="YU-Logo.png" alt="AlYamamah University" style="width:150px; height: 50px;"/></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"> <a href="Register.html" role="button" class="nav-link"> Account </a></li>
+						<li class="nav-item"> <a href="login.html" role="button" class="nav-link"> Logout</a></li>
+						<li class="nav-item"> <a href="contact.html" role="button" class="nav-link"> Contact Us</a></li> 
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Theme </a>
+							<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="Profile_Creation.html">Light Mode</a>
+							<a class="dropdown-item" href="darkProfile_Creation.html">Dark Mode</a>
+							<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Feedback?</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+   
+		<div class="container">
+			<div class="row">
+			  <div class="col-lg-10 col-xl-9 mx-auto">
+				<div class="card-signin flex-row my-5" style="background-color: darkgrey">
+				  <div class="card-body">
+					<h5 class="card-title text-center">Profile</h5>
+					<form class="form-signin" action="profile.php">
+					  <div class="form-label-group">
+						<input type="text" id="inputFirstName" class="form-control" placeholder="First Name" name="fName" required autofocus>
+						<label for="inputFirstName">First Name</label>
+					  </div>
+					  <div class="form-label-group">
+						<input type="text" id="inputLastName" class="form-control" placeholder="Last Name" name="LName" required>
+						<label for="inputLastName">Last Name</label>
+					  </div>
+					   <div class="form-label-group">
+						<input type="date" id="inputDate" class="form-control" placeholder="Birth Date" name="bDay" required>
+						<label for="inputDate">Date</label>
+					  </div>
+					  <hr>
+					  <div class="form-label-group">
+						<input type="radio" id="inputGender" class="form-control" name="gender" value="m" checked required> Male
+						<input type="radio" id="inputGender" class="form-control" name="gender" value="f" required> Female
+						<label for="inputGender">Gender</label>
+					  </div>
+					  <div class="form-label-group">
+						<input type="radio" id="inputGMS" class="form-control" name="MS" value="m" checked required> Married
+						<input type="radio" id="inputMS" class="form-control" name="MS" value="s" required> Single
+						<label for="inputMS">Martial Status</label>
+					  </div>
+					  <hr>
+					  <div class="form-label-group">
+						<input type="email" id="inputEmail" class="form-control" placeholder="Email address" name ="AEmail" required>
+						<label for="inputEmail">Email address</label>
+					  </div>
+					   <hr>
+					  <div class="form-label-group">
+						<input type="text" id="inputMajor" class="form-control" placeholder="Major" name="major" required>
+						<label for="inputMajor">Major</label>
+					  </div>
+					 <div class="form-label-group">
+						<input type="text" id="inputGPA" class="form-control" placeholder="GPA" name="GPA" required>
+						<label for="inputGPA">GPA</label>
+					  </div>
+					  <button class="btn btn-lg btn-block text-uppercase btn-register" type="submit">Submit</button>
+					  <button class="btn btn-lg btn-block text-uppercase btn-register" type="rest">Rest</button>
+					</form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body> 
+</html>
